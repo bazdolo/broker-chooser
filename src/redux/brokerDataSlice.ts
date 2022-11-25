@@ -1,11 +1,8 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {exampleBrokerData} from "../data/brokers"
 
-type BrokerDataSlice = {
-}
-
-const initialState: BrokerDataSlice = {
-    value: exampleBrokerData
+const initialState = {
+    exampleBrokerData
 }
 
 export const brokerDataSlice = createSlice({
