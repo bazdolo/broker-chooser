@@ -29,9 +29,9 @@ const Top5BrokersContainer = () => {
         <div className={styles.Top5BrokersContainer}>
             <h2>Top 5 Brokers</h2>
             <Tabs tradeType={tradeType} setTradeType={setTradeType}/>
-          <ul>
-            {/* {filteredBrokers?.map((broker) => <BrokerListItem broker={broker} key={broker.id}/>)} */}
-          </ul>
+            <ul>
+                {/* {filteredBrokers?.map((broker) => <BrokerListItem broker={broker} key={broker.id}/>)} */}
+            </ul>
         </div>
       )
 }
