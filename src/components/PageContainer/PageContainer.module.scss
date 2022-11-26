@@ -1,9 +1,18 @@
 .pageContainer {
     padding: 25px 70px;
     height: 100vh;
-    background: #DAE7FF;
     .listsLayout {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .pageContainer {
+        padding: 25px 20px;
+        .listsLayout {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
     }
 }

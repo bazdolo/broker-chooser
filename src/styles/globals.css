@@ -3,4 +3,5 @@
 @tailwind utilities;
 html {
     box-sizing: border-box;
+    background: #DAE7FF;
 }
