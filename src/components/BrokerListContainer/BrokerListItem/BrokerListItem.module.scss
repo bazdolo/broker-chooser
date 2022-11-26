@@ -1,0 +1,30 @@
+.listItemContainer {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    background: #fff;
+    margin: 10px 0 10px 0;
+    .nameLogoWrapper {
+        display: flex;
+        align-items: center;
+        .brokerIcon {
+            width: 40px;
+            height: 40px;
+            box-shadow: 5px 3px 15px rgba(0,0,0,0.3);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .brokerName {
+            margin-left: 10px;
+        }
+    }
+    .visitButton {
+        background-color: rgb(1, 1, 207);
+        color: #fff;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 5px 20px; 
+    }
+}
