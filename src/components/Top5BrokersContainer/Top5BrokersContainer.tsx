@@ -5,6 +5,7 @@ import { Broker } from '../../data/brokers'
 import Tabs from './Tabs/Tabs'
 
 import styles from './Top5BrokersContainer.module.scss'
+import Top5BrokersListItem from './Top5BrokersListItem/Top5BrokersListItem';
 
 
 const Top5BrokersContainer = () => {
@@ -30,7 +31,7 @@ const Top5BrokersContainer = () => {
             <h2>Top 5 Brokers</h2>
             <Tabs tradeType={tradeType} setTradeType={setTradeType}/>
             <ul>
-                {/* {filteredBrokers?.map((broker) => <BrokerListItem broker={broker} key={broker.id}/>)} */}
+                {sortBrokersByScore()?.map((broker, index) => <Top5BrokersListItem broker={broker} index={index} key={broker.id}/>)}
             </ul>
         </div>
       )
