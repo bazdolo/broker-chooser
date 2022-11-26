@@ -3,16 +3,16 @@ import { useSelector } from 'react-redux'
 import { AppState } from '../../redux/store';
 import { Broker } from '../../data/brokers'
 
-import SearchInput from "../../components/BrokerListContainer/SearchInput/SearchInput";
+import SearchInput from "./SearchInput/SearchInput";
 import BrokerListItem  from './BrokerListItem/BrokerListItem';
 
-import styles from "./BrokerListContainer.module.scss"
+import styles from "./BrokerList.module.scss"
 
 type BrokerListContainerProps = {
 }
 
 
-const BrokerListContainer = () => {
+const BrokerList = () => {
 
   const {exampleBrokerData} = useSelector((state: AppState) => state.brokerData)
 
@@ -35,4 +35,4 @@ const BrokerListContainer = () => {
   )
 }
 
-export default BrokerListContainer
+export default BrokerList

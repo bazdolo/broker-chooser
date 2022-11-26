@@ -1,0 +1,11 @@
+.tabContainer {
+    display: flex;
+    padding: 15px;
+    .stockTabContainer, .forexTabContainer {
+        padding: 5px 50px;
+        border-bottom: 1px solid rgb(204, 201, 201);
+        &.selected {
+            
+        }
+    }
+}

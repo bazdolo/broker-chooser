@@ -15,7 +15,7 @@ const BrokerListItem:FC <BrokerListItemProps> = ({broker}) => {
                 <img src={broker.logoUrl} className={styles.brokerIcon}/>
                 <span className={styles.brokerName}>{broker.name}</span>
             </div>
-            <button className={styles.visitButton}>Visit Broker</button>
+            <a href={broker.linkUrl} target="_blank" className={styles.visitButton}>Visit Broker</a>
         </li>
     )
 }

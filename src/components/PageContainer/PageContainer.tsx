@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderBroker from "../../components/HeaderBroker/HeaderBroker"
-import BrokerListContainer from "../../components/BrokerListContainer/BrokerListContainer"
+import BrokerList from "../../components/BrokerList/BrokerList"
+import Top5BrokersContainer from '../Top5BrokersContainer/Top5BrokersContainer'
 import styles from "./PageContainer.module.scss"
 
 const PageContainer = () => {
@@ -10,8 +11,11 @@ const PageContainer = () => {
   return (
     <div className={styles.pageContainer}>
         <HeaderBroker headerTitle={headerTitle}/>
-        <BrokerListContainer/>
-              
+        <div className={styles.listsLayout}>
+          <BrokerList/>
+          <Top5BrokersContainer />  
+        </div>
+            
     </div>
   )
 }
