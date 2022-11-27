@@ -1,14 +1,14 @@
-import {createSlice} from "@reduxjs/toolkit";
-import {exampleBrokerData} from "../data/brokers"
+import { createSlice } from "@reduxjs/toolkit";
+import { exampleBrokerData } from "../data/brokers";
 
 const initialState = {
-    exampleBrokerData
-}
+  exampleBrokerData,
+};
 
 export const brokerDataSlice = createSlice({
-    name: "brokerData",
-    initialState,
-    reducers: {},
-})
+  name: "brokerData",
+  initialState,
+  reducers: {},
+});
 
-export default brokerDataSlice.reducer
+export default brokerDataSlice.reducer;

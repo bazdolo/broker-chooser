@@ -1,5 +1,6 @@
 import {combineReducers, Middleware} from "redux";
 import {brokerDataSlice} from "./brokerDataSlice";
+import {eventDataSlice} from "./eventDataSlice";
 import {configureStore} from "@reduxjs/toolkit";
 import {useDispatch} from "react-redux";
 
@@ -8,6 +9,7 @@ type AppThunkExtra = {}
 export const makeStore = () => {
     const reducer = combineReducers({
         brokerData: brokerDataSlice.reducer,
+        eventData: eventDataSlice.reducer
     })
 
     return configureStore({
