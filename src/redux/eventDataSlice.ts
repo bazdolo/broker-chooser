@@ -33,7 +33,10 @@ export const addEvent = createAsyncThunk<Event, Event, { state: AppState }>(
       }
     });
     return new Promise<Event>((resolve, reject) => {
-      if (shouldEventSend) resolve(newEvent);
+      if (shouldEventSend) {
+        sendEvent(newEvent)
+        resolve(newEvent);
+      }
       else reject();
     });
   }
