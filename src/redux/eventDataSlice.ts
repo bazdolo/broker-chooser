@@ -24,8 +24,6 @@ export const addEvent = createAsyncThunk<Event, Event, { state: AppState }>(
   (newEvent, getState) => {
     let shouldEventSend = true;
     getState.getState().eventData.events.forEach((event) => {
-      console.log(event.measurementId, newEvent.measurementId);
-
       if (
         event.type === newEvent.type &&
         event.brokerId === newEvent.brokerId &&
@@ -47,7 +45,6 @@ export const eventDataSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(addEvent.fulfilled, (state, { payload }) => {
-      console.log(payload);
       state.events.push(payload);
     });
   },

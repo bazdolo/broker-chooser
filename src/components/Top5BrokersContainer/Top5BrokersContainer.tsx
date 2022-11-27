@@ -25,8 +25,6 @@ const Top5BrokersContainer = () => {
     return filteredExampleBrokerData;
   };
 
-  console.log(sortBrokersByScore());
-
   return (
     <div className={styles.Top5BrokersContainer}>
       <h2>Top 5 Brokers</h2>
